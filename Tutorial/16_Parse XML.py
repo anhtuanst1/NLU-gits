@@ -5,8 +5,9 @@ def main():
     doc = xml.dom.minidom.parse("Myxml.xml")
 
     # print out the document node and the name of the first child tag
-    print doc.nodeName
     print doc.firstChild.tagName
+
+    #text
 
     # get a list of XML tags from the document and print each one
     expertise = doc.getElementsByTagName("expertise")
